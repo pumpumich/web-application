@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+<section class="post_creation ">
+    <h1>Do you Wanna Post Something?</h1>
+    <div class="form_container">
+    <form class="post_form" action="/post" method="POST">
+        <label for="header">header</label><br>
+        <input type="text" name="header" id="header" placeholder="Name your post..."><br>
+        <label for="textPost">post</label><br>
+        <textarea name="textPost" id="textPost" rows="10" cols="100" placeholder="Type something..."></textarea><br>
+        <input type="hidden" name="id" id="id"  value="<%= new Date().getTime() %>" >  
+        <input type="submit" id="post_submit" value="POST" >
+    </form>
+    </div>
+</section>
+
+<%- include("partials/wall.ejs") %>
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,26 @@
+<section class="wall">
+    
+    <% if (locals.postsWall.size >= 1){%>
+        <h2 class="wall_header">Your blog-posts</h2>
+        <% const items = postsWall.values() %>
+        <% let item %>
+        <div class="wall_column">
+        <% while ((item = items.next()) && !item.done) { %>
+            <div class="blogpost">
+                <p class="blogpost_date"><%= item.value.date %></p>
+                <h3 class="blogpost_header"><%= item.value.postHeader %></h3>
+                <p class="blogpost_text"><%= item.value.postText %></p>
+                <form action="/wall" method="POST">
+                    <input type="hidden" name="id" value="<%= item.value.id %>" >
+                    <input class="postBtn" type="submit" formaction="/editPost" value="🖊️">
+                    <input class="postBtn" type="submit" formaction="/deletePost" value="🗑️">
+                </form>
+                </div>
+        <%} %>
+        </div>
+        <% } else { %>
+        <h2 class="wall_header">Nothing posted yet..</h2>
+        <%} %>
+
+
+</section>

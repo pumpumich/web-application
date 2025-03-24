@@ -1,0 +1,599 @@
+body{
+    width: 90%;
+    margin: 0px auto;
+    background-color: #EBEBDF;
+    color: #EB631B;
+    position: relative;
+    padding-bottom: 100px;
+    
+}
+
+img{
+    line-height: 0;
+}
+
+h1, h2{
+    font-family: 'Imbue', serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    padding: 10px 0;
+    margin-bottom: 50px;
+
+}
+
+.nav_list{
+    display: flex;
+    padding: 0;
+    margin: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    list-style: none;
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+}
+
+.nav_list_item a{
+    text-decoration: none;
+    color: #EB631B;
+}
+
+.logo_nav{
+    margin-right: auto;
+}
+
+h1{
+    font-size: 96px;
+    margin: 15px auto 5px;
+}
+
+.home{
+    width: 70%;
+    margin: 0 auto;
+    /* background-image: url("/images/texture.png");
+    background-repeat: repeat;
+    background-clip: border-box; */
+   
+    
+}
+
+.home-overlay{
+    background-image: url("/images/texture.png");
+    background-size: contain;
+    mix-blend-mode: multiply;
+    background-clip: border-box;
+    padding: 30px 35px ;
+    padding-bottom: 70px;
+}
+
+.gallery_list{
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    list-style: none;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.gallery_item{
+    margin: 0 10px;
+}
+
+.gallery_item img{
+    overlay: multiply;
+    width: 277px;
+    /* mix-blend-mode: multiply */
+}
+
+.home_intro{
+    font-family: "Dawning of a New Day";
+    font-size: 3rem;
+    line-height: 100%;
+    color: #6A687A;
+    margin: 50px auto;
+    width: 70%;
+    text-align: center;
+}
+
+.wall{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.wall_header{
+    font-size: 4.6rem;
+    margin-bottom: 20px;
+}
+
+.wall_column{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.blogpost{
+    width: 60%;
+    color:black;
+    font-family: "Crimson text";
+}
+
+.blogpost:nth-last-child(2n){
+    margin-left: auto;
+    text-align: right;
+}
+
+.blogpost:nth-last-child(2n - 1){
+    margin-right: auto;
+}
+
+.blogpost_date{
+    padding: 0;
+    margin: 0;
+}
+
+.blogpost_header{
+    padding: 0;
+    margin: 0;
+}
+
+.blogpost_text{
+    margin: 0;
+}
+
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #EB631B ;
+    padding-top: 10px;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.logo_footer img{
+    width: 100px;
+}
+
+.footer .nav_list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .nav_list_item{
+    font-family: 'Imbue';
+    
+    list-style: none;
+}
+
+.footer .nav_list_item a{
+    color: black;
+    text-decoration: none;
+}
+
+.post_creation{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.form_container{
+    
+    border: 1px solid #EB631B;
+}
+
+.post_form{
+   width: 60%;
+    margin: 50px auto; 
+}
+
+input[type="text"]{
+    width: 100%;
+    border: none;
+    height: 2rem;
+    text-align:left;
+    vertical-align: bottom;
+    /* border-radius: 5% 5%; */
+    line-height: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Crimson text';
+    padding: 0.5rem;
+    margin-bottom: 30px;
+}
+
+textarea{
+    width: 100%;
+    border: none;
+    text-align:left;
+    vertical-align: bottom;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Crimson text';
+    padding: 0.5rem;
+    margin-bottom: 30px;
+
+}
+
+input[type="text"]::placeholder, textarea::placeholder{
+    font-size: 1.2rem;
+    color:#b1b1b6;
+}
+
+input[id="textPost"]{
+    height: 10rem;
+}
+
+input[id="post_submit"]{
+    margin: 0 auto;
+    margin-right: 10px;
+    background-color: #EB631B;
+    color: white;
+    border: none;
+    padding: 0 30px;
+    font-family: 'Imbue', serif;
+    font-size: 1.75rem;
+    border-radius: 20px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+label{
+    font-size: 1.5rem;
+    font-family: 'Crimson text';
+}
+
+.postBtn{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.contact_container{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_block{
+    width: 800px;
+    height: 50%;
+    margin: 0 auto;
+    padding: 0;
+    border: 4px #EB631B solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_header{
+    margin: 0;
+    padding: 0;
+    font-family: 'Italiana', sans-serif;
+    font-size: 11rem;
+    line-height: 90%;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+.contacts_list{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    padding: 0 15px 5px;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: -0.5px;
+    line-height: 100%;
+    font-size: 1.5rem;
+}
+
+.contact_link{
+    color: #EB631B;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact_link:hover{
+    color: #954013;
+}
+
+input[type="submit"]{
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1200px){
+    .gallery_list{
+        margin-bottom: 50px;
+    }
+    .home_intro{
+        font-size: 2rem;
+        line-height: 100%;
+        margin: 50px auto;
+        width: 85%;
+    }
+    .gallery_item img{
+        width: 200px;
+        /* mix-blend-mode: multiply */
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 600px){
+
+    .nav_list{
+        font-size: 18px;
+    }
+
+    .home-overlay{
+        background-clip: border-box;
+        padding: 10px 25px ;
+        padding-bottom: 30px;
+    }
+    .gallery_list{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 25px;
+        align-items:center ;
+    }
+    
+    .home{
+        width: 95%;
+    }
+
+    .home_intro{
+        font-size: 1.5rem;
+        line-height: 100%;
+        margin: 20px auto;
+        width: 85%;
+    }
+    .gallery_item img{
+        width: 100%;
+        min-width: 100px;
+        max-width: 200px;
+        /* mix-blend-mode: multiply */
+    }
+    
+    .wall{
+        width: 90%;
+        margin: 50px auto;
+    }
+
+
+    .blogpost_text{
+        font-size: smaller;
+    }
+
+    .logo_nav .logo{
+        width: 100%;
+        max-width: 100px;
+        min-width: 50px;
+    }
+    
+    h2{
+        font-size: 4rem;
+    }
+
+    h1{
+        font-size: 4.5rem;
+    }
+
+    .post_form{
+        width: 85%;
+         margin: 50px auto; 
+     }
+     
+     input[type="text"]{
+         width: 100%;
+         border: none;
+         height: 2rem;
+         text-align:left;
+         vertical-align: bottom;
+         /* border-radius: 5% 5%; */
+         line-height: 1rem;
+         font-size: 1.1rem;
+         color: black;
+         font-family: 'Crimson text';
+         padding: 0.5rem;
+         margin-bottom: 30px;
+     }
+     
+     textarea{
+         width: 100%;
+         border: none;
+         text-align:left;
+         vertical-align: bottom;
+         line-height: 1.1rem;
+         font-size: 1.1rem;
+         color: black;
+         font-family: 'Crimson text';
+         padding: 0.5rem;
+         margin-bottom: 30px;
+     
+     }
+     
+     input[type="text"]::placeholder, textarea::placeholder{
+         font-size: 1rem;
+         color:#b1b1b6;
+     }
+     
+     input[id="post_submit"]{
+         font-size: 1.5rem;
+     }
+
+     label{
+         font-size: 1.2rem;
+         font-family: 'Crimson text';
+     }
+
+     .contact_container{
+        display: flex;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact_block{
+        width: 510px;
+        height: 50%;
+        border: 3px #EB631B solid;
+    }
+    
+    .contact_header{
+        font-size: 7rem;
+        line-height: 78%;
+    }
+    
+    .contacts_list{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .nav_list{
+        font-size: 18px;
+    }
+
+    .home-overlay{
+        background-clip: border-box;
+        padding: 10px 25px ;
+        padding-bottom: 30px;
+    }
+    .gallery_list{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 25px;
+        align-items:center ;
+    }
+    
+    .home{
+        width: 95%;
+    }
+
+    .home_intro{
+        font-size: 1.5rem;
+        line-height: 100%;
+        margin: 20px auto;
+        width: 85%;
+    }
+    .gallery_item img{
+        width: 100%;
+        min-width: 50px;
+        max-width: 100px;
+        /* mix-blend-mode: multiply */
+    }
+    
+    .wall{
+        width: 90%;
+        margin: 50px auto;
+    }
+
+
+    .blogpost_text{
+        font-size: smaller;
+    }
+
+    .logo_nav .logo{
+        width: 100%;
+        max-width: 100px;
+        min-width: 50px;
+    }
+    
+    h2{
+        font-size: 4rem;
+    }
+
+    h1{
+        font-size: 4.5rem;
+    }
+
+    .post_form{
+        width: 85%;
+         margin: 50px auto; 
+     }
+     
+     input[type="text"]{
+         width: 100%;
+         border: none;
+         height: 2rem;
+         text-align:left;
+         vertical-align: bottom;
+         /* border-radius: 5% 5%; */
+         line-height: 1rem;
+         font-size: 1.1rem;
+         color: black;
+         font-family: 'Crimson text';
+         padding: 0.5rem;
+         margin-bottom: 30px;
+     }
+     
+     textarea{
+         width: 100%;
+         border: none;
+         text-align:left;
+         vertical-align: bottom;
+         line-height: 1.1rem;
+         font-size: 1.1rem;
+         color: black;
+         font-family: 'Crimson text';
+         padding: 0.5rem;
+         margin-bottom: 30px;
+     
+     }
+     
+     input[type="text"]::placeholder, textarea::placeholder{
+         font-size: 1rem;
+         color:#b1b1b6;
+     }
+     
+     input[id="post_submit"]{
+         font-size: 1.5rem;
+     }
+
+     label{
+         font-size: 1.2rem;
+         font-family: 'Crimson text';
+     }
+
+     .contact_container{
+        display: flex;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact_block{
+        width: 510px;
+        height: 50%;
+        border: 3px #EB631B solid;
+    }
+    
+    .contact_header{
+        font-size: 7rem;
+        line-height: 78%;
+    }
+    
+    .contacts_list{
+        font-size: 1.1rem;
+    }
+}

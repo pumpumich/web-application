@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<section class="post_creation ">
+    <h1>Editing publication...</h1>
+    <div class="form_container">
+    <form class="post_form" action="/post" method="POST">
+        <label for="header">header</label><br>
+        <input type="text" name="header" id="header" value="<%= editedPost.postHeader %>"><br>
+        <label for="textPost">post</label><br>
+        <textarea name="textPost" id="textPost" rows="10" cols="100"><%= editedPost.postText %></textarea><br>
+        <input type="hidden" name="id" id="id"  value="<%= editedPost.id %>" >  
+        <input type="submit" id="post_submit" formaction="/saveChanges" value="SAVE" >
+        <input type="submit" id="post_submit" formaction="/discardChanges" value="DISCARD CHANGES" >
+    </form>
+    </div>
+</section>
+
+<%- include("partials/wall.ejs") %>
+<%- include("partials/footer.ejs") %>

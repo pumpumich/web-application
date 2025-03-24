@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAB</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Crimson Text' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Dawning of a New Day' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+
+<section class="home">
+    <div class="home-overlay">
+    <h1>Home Page</h1>
+    <!-- <div class="gallery"> -->
+        <ul class="gallery_list">
+            <li class="gallery_item" >
+                <img src="images/polaroid1.jpg">
+            </li>
+            <li class="gallery_item" >
+                <img src="images/polaroid2.png">
+            </li>
+            <li class="gallery_item" >
+                <img src="images/polaroid3.jpg">
+            </li>
+        </ul>
+        <p class="home_intro">Welcome to JAB! Explore a world of captivating content, insightful discussions, and endless inspiration. Whether you're here to share your thoughts, discover new ideas, or simply enjoy some quality reading, we're thrilled to have you join our community. Feel free to dive in, connect with like-minded individuals, and embark on a journey of knowledge and creativity. Happy reading!</p>
+    <!-- </div> -->
+</div>
+</section>
+<%- include("partials/wall.ejs") %>
+<%- include("partials/footer.ejs") %>
+</body>
+</html>
